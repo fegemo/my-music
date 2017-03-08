@@ -32,15 +32,6 @@ angular.module('music', ['ionic', 'music.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
-    views: {
-      'mainContent': {
-        templateUrl: 'templates/search.html'
-      }
-    }
-  })
-
   .state('app.browse', {
       url: '/browse',
       views: {
