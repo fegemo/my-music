@@ -26,6 +26,7 @@ $dark:                            #444 !default;
   used under CC BY http://creativecommons.org/licenses/by/4.0/
   Modified icons to fit ionicon’s grid from original.
 */
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhaina");
 @font-face {
   font-family: "Ionicons";
   src: url("../lib/ionic/fonts/ionicons.eot?v=2.0.1");
@@ -9822,3 +9823,6 @@ a.button {
 
 #menu-title > h1 {
   display: inline-block; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Baloo Bhaina", cursive; }
