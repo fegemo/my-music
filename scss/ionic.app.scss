@@ -21,3 +21,14 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+
+#menu-title {
+  img {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: sub;
+  }
+  & > h1 {
+    display: inline-block;
+  }
+}
