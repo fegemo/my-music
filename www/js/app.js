@@ -26,7 +26,7 @@ angular.module('music', ['ionic', 'music.controllers'])
   $stateProvider
 
     .state('app', {
-    url: '/app',
+    url: '/main',
     abstract: true,
     templateUrl: 'templates/menu.html',
     controller: 'AppCtrl'
@@ -69,5 +69,5 @@ angular.module('music', ['ionic', 'music.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/main/playlists');
 });
