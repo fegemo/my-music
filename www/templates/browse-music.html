@@ -1,5 +1,16 @@
 <ion-view view-title="Browse">
   <ion-content>
     <h1>Browse Music</h1>
+    <ion-list can-swipe="true" show-reorder="false" show-delete="false">
+      <ion-item ng-repeat="song in songs" class="item-thumbnail-left">
+        <img ng-src="{{song.albumArtURL}}">
+        <h2>{{song.title}}</h2>
+        <p>do album {{song.album}}, artista {{song.artist}}</p>
+        <ion-option-button class="button-positive"
+                          ng-click="share(item)">
+         <i class="icon ion-android-add-circle"></i>
+        </ion-option-button>
+        </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>

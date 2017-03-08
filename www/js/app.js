@@ -36,7 +36,8 @@ angular.module('music', ['ionic', 'music.controllers'])
       url: '/browse-music',
       views: {
         'mainContent': {
-          templateUrl: 'templates/browse-music.html'
+          templateUrl: 'templates/browse-music.html',
+          controller: 'BrowseMusicCtrl'
         }
       }
     })
