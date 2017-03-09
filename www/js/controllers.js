@@ -41,10 +41,9 @@ angular.module('music.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope, $http) {
+.controller('PlaylistsCtrl', function($scope, $http, PlaylistService) {
   $scope.playlists = [];
-  $http.get('http://localhost:8080/playlists')
-    .success(data => $scope.playlists = data);
+  PlaylistService.getPlaylists().then(playlists => $scope.playlists = playlists);
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
