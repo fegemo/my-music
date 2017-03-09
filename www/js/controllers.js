@@ -46,7 +46,9 @@ angular.module('music.controllers', [])
   PlaylistService.getPlaylists().then(playlists => $scope.playlists = playlists);
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('PlaylistCtrl', function($scope, $stateParams, PlaylistService) {
+  const id = $stateParams.playlistId;
+  PlaylistService.getPlaylist(id).then(playlist => $scope.playlist = playlist);
 })
 
 .controller('BrowseMusicCtrl', function($scope, $http) {
