@@ -41,12 +41,10 @@ angular.module('music.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Power Metal', id: 1 },
-    { title: 'Space Metal', id: 2 },
-    { title: 'Rock', id: 3 },
-  ];
+.controller('PlaylistsCtrl', function($scope, $http) {
+  $scope.playlists = [];
+  $http.get('http://localhost:8080/playlists')
+    .success(data => $scope.playlists = data);
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
