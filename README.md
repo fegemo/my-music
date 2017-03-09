@@ -115,7 +115,6 @@ Siga os passos abaixo para preparar seu ambiente.
             - `gulpfile.js`: configuração das tarefas que podem ser executadas pelo Gulp
             - `package.json`: configuração do projeto Node.js (nome, versão, dependências etc.)
 
-TODO: iniciar repositório git
 
 ### Exercícios no Código
 
