@@ -4,7 +4,7 @@
 // 'music' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'music.controllers' is found in controllers.js
-angular.module('music', ['ionic', 'music.controllers'])
+angular.module('music', ['ionic', 'music.controllers', 'music.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
