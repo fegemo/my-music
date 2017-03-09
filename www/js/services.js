@@ -7,7 +7,7 @@ angular.module('music.services', [])
     getPlaylists: function() {
       let deferred = $q.defer();
       if (!playlistsCache) {
-        $http.get('http://localhost:8080/playlists')
+        $http.get('http://mah-music-api.herokuapp.com/playlists')
           .success(function(data) {
             playlistsCache = data;
             deferred.resolve(playlistsCache);

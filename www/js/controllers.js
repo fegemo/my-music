@@ -53,7 +53,7 @@ angular.module('music.controllers', [])
 
 .controller('BrowseMusicCtrl', function($scope, $http) {
   $scope.songs = [];
-  $http.get('http://localhost:8080/songs')
+  $http.get('http://mah-music-api.herokuapp.com/songs')
     .success(data => $scope.songs = data);
   $scope.search = '';
 });
