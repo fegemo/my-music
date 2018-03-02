@@ -70,7 +70,7 @@ Siga os passos abaixo para preparar seu ambiente.
     - Na sua pasta onde guarda seus projetos, execute o  comando do Ionic para criar um aplicativo usando como ponto de partida o exemplo _sidemenu_ (3ª imagem):
 
     ```
-    ionic start my-music sidemenu
+    ionic start my-music sidemenu --type=ionic1
     ```
 
     - O comando `ionic start` cria um novo aplicativo
